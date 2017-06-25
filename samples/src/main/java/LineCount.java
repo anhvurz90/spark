@@ -6,12 +6,12 @@ import org.apache.spark.api.java.JavaSparkContext;
  * 
  * Run Spark:
  * 
- * anhvu@Lenovo-Y70:~/01.Work/15.Spark/spark-2.1.0-bin-hadoop2.7/bin$ ./spark-submit --class Main 
+ * anhvu@Lenovo-Y70:~/01.Work/15.Spark/spark-2.1.0-bin-hadoop2.7/bin$ ./spark-submit --class LineCount 
  *                      --master local[2] 
- *        ~/01.Work/03.Projects/git/tutorials/spark/line-count/target/line-count-0.0.1-SNAPSHOT.jar 
+ *        ~/01.Work/03.Projects/git/tutorials/spark/line-count/target/samples-0.0.1-SNAPSHOT.jar 
  * 
  */
-public class Main {
+public class LineCount {
 
     public static void main(String[] args) {
         SparkConf conf = new SparkConf().setAppName("Line Count");
