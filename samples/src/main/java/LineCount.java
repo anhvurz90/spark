@@ -21,5 +21,6 @@ public class LineCount {
         
         System.out.println(textLoad.count());
         
+        ctx.close();
     }
 }
