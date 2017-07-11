@@ -44,3 +44,25 @@ UDEMY - SPARK STARTER KIT
   - Does Spark replace Hadoop?
     + Spark enhances but replace Hadoop stack
 }
+4.Challenges Spark tries to address: {
+  4.1.Spark solves inefficiencies in 2 areas: {
+    - Iterative machine learning
+    - Iterative data mining
+  }
+  4.2.Iterative example: Degree of separation: {
+    - You: Sam, Emily
+    - Emily: John, Riley
+    - Riley: Jim, Steve
+
+    Need to run the program MULTIPLE time to reach the output
+  }
+  4.3.Iterative machine learning with Hadoop: {
+    - Input -> Hadoop MapReduce -> intermediate output1(in disk, HDFS)
+    - Intermediate output1 -> Hadoop MapReduce -> intermediate output2(in disk, HDFS)
+    - ...
+    - Intermediate outputn -> Hadoop MapReduce -> output
+  }
+  4.4.Iterative machine learning with Spark: {
+    - The same steps as with Hadoop, but intermediate outputs are kept in MEMORY
+  }
+}
