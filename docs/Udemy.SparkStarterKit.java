@@ -29,3 +29,8 @@ UDEMY - SPARK STARTER KIT
     - Scala functions
   }
 }
+2.Running Spark on your computer: {
+  - Download Spark
+  - $SPARK_HOME\bin\spark-shell
+}
+
