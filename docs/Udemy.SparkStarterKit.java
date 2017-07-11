@@ -33,4 +33,14 @@ UDEMY - SPARK STARTER KIT
   - Download Spark
   - $SPARK_HOME\bin\spark-shell
 }
-
+3.Spark vs. Hadoop who wins: {
+		Hadoop:			Spark:
+  - Storage:	+ HDFS			+ Leverage Existing
+  - MapReduce:	+ Yes			+ Yes
+  - Speed:	+ Fast			+ 10 - 100x faster
+  - Resource	+ Yarn			+ Standalone
+  Management:
+  
+  - Does Spark replace Hadoop?
+    + Spark enhances but replace Hadoop stack
+}
