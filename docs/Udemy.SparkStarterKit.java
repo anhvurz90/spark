@@ -66,3 +66,19 @@ UDEMY - SPARK STARTER KIT
     - The same steps as with Hadoop, but intermediate outputs are kept in MEMORY
   }
 }
+5.How Spark is faster than Hadoop? {
+  5.1.In-Memory Computing:
+    - Not a new concept. So what's special about Spark?
+    - Spark offers in-memory computing at distributed scale ( many machines)
+  }
+  5.2.Spark Execution Engine: {
+    - Commands -> Logical plan -> Physical plan -> Tasks -> Spark cluster
+  }
+  5.3.Resilient Distributed Datasets: {
+    - Core of Spark
+    - RDD enables Spark to keep track of all operations & transformations
+  }
+  5.4.Spark Architecture: {
+    - Built from the ground up for speed & efficiency
+  }
+}
