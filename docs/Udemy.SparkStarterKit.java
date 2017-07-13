@@ -82,3 +82,22 @@ UDEMY - SPARK STARTER KIT
     - Built from the ground up for speed & efficiency
   }
 }
+6.The need for RDD: {
+  6.1.How does Hadoop handle fault-tolerance: {
+    - Hadoop stores results of MapReduce jobs in disks.
+    - Node 2 dies -> no problem, node 7 reads result of node 2 from disks (HDFS)
+  }
+  6.2.Sparks: { 
+    - Stores results of Spark jobs in memory.
+    - Node 7 needs node 2 to be alive to read result from its memory
+    - So if node 2 DIES, ...?
+    - 10 -> John(+10) -> Emily(+20) -> Sam(+5) -> Riley(+40) -> 85
+      A	    B = A + 10   C = B + 20    D = C+5	  E =D + 40
+	If Sam dies, ask someone else to calculate D from Emily, then pass the result to Riley
+	+ Emily -> Jim -> Riley
+    - Spark KEEPS TRACK OF EVERY SINGLE OPERATION, TRANSFORMATION.
+    - Via RDD. 
+      We can NOT work with data in Spark WITHOUT RDD.
+      We do use Spark function which ALWALS create RDD behind the scenes.
+  }
+}
