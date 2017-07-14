@@ -112,11 +112,18 @@ UDEMY - SPARK STARTER KIT
     hdfs://node1.. ---> logfile ---> errors ---> hdfs
 			  RDD	      RDD	 RDD
     - Run example: spark/bin/spark-shell
+  }
+  7.2.Definition: {
     - RDD: the basic abstraction in Spark, representing an immutable, partitioned collection of elements that can be operated on in parallel.
 	+ Property#1: List of partition
 	+ Property#2: Compute Function ( textFile(), filter()...)
 		Each function is applied to ALL elements.
 	+ Property#3: List of dependencies:
 		HDFS depends on ERRORS depends on LOGFILE depends on INPUT DATASET
+    - RDD lets Spark keep track of all the opeations on the data set, helps to achieve fault-tolerance
   }
+}
+8.What an RDD is not? {
+  - All RDDs are in memory: FALSE
+  - Spark creates all RDDs in real: FALSE, Logical plan != Actual execution plan.
 }
