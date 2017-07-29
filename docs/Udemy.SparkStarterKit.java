@@ -127,3 +127,15 @@ UDEMY - SPARK STARTER KIT
   - All RDDs are in memory: FALSE
   - Spark creates all RDDs in real: FALSE, Logical plan != Actual execution plan.
 }
+9.First Program in Spark: {
+  --Max volume stocks:
+    val stocks = sc.textFile("/user/osboxes/stocks-dataset")
+    val splits = stocks.map(record => record.split(",")) - transformation, lazy, does nothing.
+    val symvol = splits(arr => (arr(1), arr(7).toInt())  - transformation, lazy, does nothing.
+    val maxvol = symvol.reduceByKey((vol1, vol2) => Math.max(vol1, vol2)) - transformation, lazy, does nothing.
+    maxvol.collect().foreach(println) - action, starts execution.
+  
+  --Spark shell
+    spark-shell --master spark://node1:7077
+    
+}
