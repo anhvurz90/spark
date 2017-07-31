@@ -139,3 +139,16 @@ UDEMY - SPARK STARTER KIT
     spark-shell --master spark://node1:7077
     
 }
+10.What are dependencies & why they are important: {
+  - Narrow Dependency VS Wide Dependency: A depends on B
+    + Depend on everthing B has: NarrowDep: 
+      Child partition depends on ENTIRE parent partition
+    + Depend on a portion of B: WideDep
+      Child partition depends on a PORTION OF EACH of the parent partitions
+  - c = a.cartesian(b);
+  - You can still have a narrow dependency even when a child partition has more than one parent partition.
+  - As long as the child partition depends on entire parent partitions.
+  - Why we have to care about dependencies?
+    + Type of dependency determines the number of tasks
+    + Type of dependency has an impact on fault tolerance    
+}
