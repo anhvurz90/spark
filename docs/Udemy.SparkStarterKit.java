@@ -152,3 +152,14 @@ UDEMY - SPARK STARTER KIT
     + Type of dependency determines the number of tasks
     + Type of dependency has an impact on fault tolerance    
 }
+11.Program to Execution.Part1:{
+  - Simple plan:
+    + Too many tasks
+    + Lot of intermediate data
+    + Poor performance
+  - Fewer tasks
+  - Group all consecutive narrow dev tasks into one: pipeline
+    + 2 stages:
+      * Stage0: task0, task1, task2, task3
+      * Stage1: task4, task5, task6, task7
+}
