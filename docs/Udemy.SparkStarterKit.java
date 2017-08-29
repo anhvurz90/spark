@@ -163,3 +163,13 @@ UDEMY - SPARK STARTER KIT
       * Stage0: task0, task1, task2, task3
       * Stage1: task4, task5, task6, task7
 }
+12.Program to Execution.Part2:{
+  - Spark Master at spark://192.168.56.101:7077
+	Browser	Url: 192.168.56.101:18080
+  - Workers, Running Applications, Completed Applications
+  - Login to spark shell: 
+	spark-shell -- master spark://node1:7077
+  - Application contains many Jobs, each of which contains many Stages, 
+				    each of which contains many Tasks.
+  - 05:30
+}
